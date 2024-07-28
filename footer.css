@@ -1,0 +1,42 @@
+/* CSS style sheet for footer/contact section */
+.contact-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    
+}
+
+.contact-info, .hours-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h2, .hours-info h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-info p, .hours-info p {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .contact-info, .hours-info {
+        margin-bottom: 20px;
+    }
+}

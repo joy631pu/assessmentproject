@@ -1,0 +1,97 @@
+/* CSS style sheet for the Moodboard section of the webpage */
+.gallerycontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text-content a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.image-content img {
+    max-width: 300px;
+    width: 20%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .text-content h1 {
+        font-size: 1.8em;
+    }
+
+    .text-content a {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallerycontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .image-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .gallerycontainer img{
+        display: block;
+        width: 100%;
+    }
+
+    
+
+}
+
+@media (max-width: 480px) {
+    .text-content h1 {
+        font-size: 1.5em;
+    }
+
+    .text-content a {
+        padding: 6px 12px;
+    }
+
+    
+}

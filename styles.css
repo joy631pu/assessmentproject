@@ -1,0 +1,362 @@
+/* Main style sheet of the webpage */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+    background-color: #f9f4ef;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('Background.PNG'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: left;
+}
+
+.overlay {
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+}
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 104px 171px;
+    gap: 22px;
+}
+
+.about-section .content {
+    max-width: 500px;
+}
+
+.about-section .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section .content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.about-section .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 815px;
+    top: 800px;
+    border-radius: 200px;
+}
+
+.square-imagesmall {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 962px;
+    top: 752px;
+    border-radius: 3px;
+}
+.square-imagelarge {
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    left: 950px;
+    top: 915px;
+    border-radius: 3px;
+}
+
+.inspiration-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.inspiration-section .gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inspiration-section .gallery-item {
+    max-width: 200px;
+    text-align: center;
+}
+
+.journal-section {
+    padding: 50px;
+    text-align: left;
+}
+
+.journal-section .journals {
+    display: flex;
+    justify-content: space-around;
+}
+
+.journal-section .journal-item {
+    max-width: 400px;
+    text-align: left;
+}
+
+.journal-section h3{
+    font-size: 2.2rem;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.journal-section p{
+    font-size: 1.4rem;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+
+.mood-board-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.mood-board-section .mood-board {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mood-board img {
+    max-width: 200px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section .images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-section .circle-image,
+    .about-section .square-imagesmall,
+    .about-section .square-imagelarge {
+        margin: 10px;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    .hero-section h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .menu-button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    
+
+    .about-section .content {
+        padding-top: 430px;
+        max-width: 500px;
+    }
+
+    .about-section .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section .content p {
+        font-size: 0.9rem;
+    }
+
+    
+    .circle-image {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 150px;
+        top: 770px;
+        border-radius: 200px;
+    }
+    
+    .square-imagesmall {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 300px;
+        top: 722px;
+        border-radius: 3px;
+    }
+    .square-imagelarge {
+        position: absolute;
+        width: 300px;
+        height: 230px;
+        left: 290px;
+        top: 885px;
+        border-radius: 3px;
+    }
+
+    .inspiration-section .gallery,
+    .journal-section .journals,
+    .mood-board-section .mood-board {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inspiration-section .gallery-item,
+    .journal-section .journal-item,
+    .mood-board img {
+        max-width: 90%;
+    }
+    .journal-section h3{
+        font-size: 2.0rem;
+        gap: 10px;
+        
+    }
+    
+    .journal-section p{
+        font-size: 1.1rem;
+        gap: 20px;
+        
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .menu-button {
+        font-size: 14px;
+    }
+    .about-section{
+        padding: 0;
+        gap: 0;
+    }
+
+    .circle-image {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        top: 770px;
+        border-radius: 200px;
+    }
+    
+    .square-imagesmall {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 162px;
+        top: 722px;
+        border-radius: 3px;
+    }
+    .square-imagelarge {
+        position: absolute;
+        width: 300px;
+        height: 230px;
+        left: 150px;
+        top: 885px;
+        border-radius: 3px;
+    }
+
+    .journal-section h3{
+        font-size: 1.5rem;
+        gap: 10px;
+        
+    }
+    
+    .journal-section p{
+        font-size: 0.8rem;
+        gap: 20px;
+        
+    }
+
+    .about-section .content {
+        padding-top: 430px;
+        max-width: 500px;
+    }
+
+    .about-section .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-section .content p {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media (max-width:300px) {
+    .circle-image {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        top: 660px;
+        border-radius: 200px;
+    }
+    
+    .square-imagesmall {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 162px;
+        top: 612px;
+        border-radius: 3px;
+    }
+    .square-imagelarge {
+        position: absolute;
+        width: 300px;
+        height: 230px;
+        left: 150px;
+        top: 775px;
+        border-radius: 3px;
+    }    
+}
